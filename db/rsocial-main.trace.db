@@ -1,0 +1,42 @@
+2023-12-10 00:35:27.487679-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id)) [42001-224]
+2023-12-10 00:35:27.514572-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references user [42001-224]
+2023-12-10 00:36:31.367104-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id)) [42001-224]
+2023-12-10 00:36:31.390042-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references user [42001-224]
+2023-12-10 00:36:34.668140-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id)) [42001-224]
+2023-12-10 00:36:34.687088-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references user [42001-224]
+2023-12-10 00:39:15.960940-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id)) [42001-224]
+2023-12-10 00:39:15.982882-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references user [42001-224]
+2023-12-10 00:39:19.580303-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id)) [42001-224]
+2023-12-10 00:39:19.597259-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references user [42001-224]
+2023-12-10 00:41:29.591407-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id)) [42001-224]
+2023-12-10 00:41:29.610356-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references user [42001-224]
+2023-12-10 00:41:33.525209-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id integer not null, name varchar(255), password varchar(255), perfil_photo varchar(255), primary key (id)) [42001-224]
+2023-12-10 00:41:33.544157-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists post add constraint FK12njtf8e0jmyb45lqfpt6ad89 foreign key (author_id) references user [42001-224]

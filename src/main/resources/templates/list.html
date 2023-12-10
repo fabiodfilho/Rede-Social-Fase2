@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuários</title>
+    <!-- Adicione os cabeçalhos necessários, como links para folhas de estilo ou scripts -->
+</head>
+<body>
+<h1>Lista de Usuários</h1>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <!-- Adicione mais colunas conforme necessário -->
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Use Thymeleaf para iterar sobre a lista de usuários -->
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <!-- Adicione mais colunas conforme necessário -->
+    </tr>
+    </tbody>
+</table>
+
+<a href="/users/new" class="btn btn-primary">Adicionar Novo Usuário</a>
+</body>
+</html>

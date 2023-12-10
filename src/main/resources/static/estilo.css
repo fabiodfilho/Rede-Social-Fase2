@@ -1,0 +1,21 @@
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+form {
+    border: 1px solid black;
+    width: 500px;
+    padding: 20px;
+}

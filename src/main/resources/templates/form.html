@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Usuário</title>
+    <!-- Adicione os cabeçalhos necessários, como links para folhas de estilo ou scripts -->
+</head>
+<body>
+<h1>Formulário de Usuário</h1>
+
+<form th:action="@{/users/new}" method="post" th:object="${user}">
+    <div>
+        <label for="name">Nome do usuário:</label>
+        <input type="text" id="name" name="name" th:field="*{name}" required>
+    </div>
+
+    <div>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" th:field="*{password}" required>
+    </div>
+
+    <div>
+        <label for="perfilPhoto">URL da Foto do Perfil:</label>
+        <input type="text" id="perfilPhoto" name="perfilPhoto" th:field="*{perfilPhoto}">
+    </div>
+
+    <!-- Adicione mais campos conforme necessário -->
+
+    <button type="submit">Adicionar Usuário</button>
+</form>
+
+<a href="/users" class="btn btn-primary">Voltar para a Lista de Usuários</a>
+</body>
+</html>
