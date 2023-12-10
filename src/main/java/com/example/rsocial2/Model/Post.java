@@ -1,6 +1,9 @@
 package com.example.rsocial2.Model;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDateTime;
 
 @Entity
 public class Post {
@@ -8,7 +11,10 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String userName;
-    private Integer creationDate;
+
+    @CreationTimestamp
+    private LocalDateTime creationDate;
+
     private Integer likeCount;
     private String text;
     private String image;
@@ -17,53 +23,33 @@ public class Post {
     @JoinColumn(name = "author_id", nullable = false)
     private User author;
 
-    public User getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(User author) {
-        this.author = author;
-    }
-
-
-    // getters and setters
+    // getters e setters
 
     public String getUserName() {
         return userName;
     }
 
     public void setUserName(String user) {
-
-        user = user;
+        this.userName = user;
     }
 
-    public Integer getCreationDate() {
-
+    public LocalDateTime getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Integer day) {
-
-        creationDate = creationDate;
-    }
-
     public Integer getLikeCount() {
-
         return likeCount;
     }
 
     public void setLikeCount(Integer likes) {
-
-        likeCount = likeCount;
+        this.likeCount = likes;
     }
 
     public String getText() {
-
         return text;
     }
 
     public void setText(String text) {
-
         this.text = text;
     }
 
@@ -75,12 +61,19 @@ public class Post {
         this.image = image;
     }
 
-
     public Integer getId() {
         return id;
     }
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User author) {
+        this.author = author;
     }
 }

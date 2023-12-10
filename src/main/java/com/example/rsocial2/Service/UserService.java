@@ -18,8 +18,8 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public User findUserById(Long id) {
-        Optional<User> userOptional = userRepository.findById(id);
+    public User findUserById(Integer id) {
+        Optional<User> userOptional = userRepository.findById(Long.valueOf(id));
         return userOptional.orElse(null);
     }
 
@@ -27,20 +27,21 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    public User updateUser(Long id, User updatedUser) {
-        if (userRepository.existsById(id)) {
-            updatedUser.setId(Math.toIntExact(id));
+    public User updateUser(Integer id, User updatedUser) {
+        if (userRepository.existsById(Long.valueOf(id))) {
+            updatedUser.setId(id);
             return userRepository.save(updatedUser);
         }
         return null; // Usuário não encontrado para atualização
     }
 
-    public User deleteUser(Long id) {
-        Optional<User> userOptional = userRepository.findById(id);
+    public User deleteUser(Integer id) {
+        Optional<User> userOptional = userRepository.findById(Long.valueOf(id));
         if (userOptional.isPresent()) {
-            userRepository.deleteById(id);
+            userRepository.deleteById(Long.valueOf(id));
             return userOptional.get();
         }
         return null; // Usuário não encontrado para exclusão
     }
 }
+
