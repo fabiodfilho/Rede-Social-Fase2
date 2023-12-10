@@ -22,6 +22,12 @@ public class PostController {
     @Autowired
     private UserService userService;
 
+    @GetMapping("/")
+    public String redirectToPostList() {
+        // Redireciona para a página "post-list" quando nenhum caminho específico é fornecido
+        return "redirect:/posts"; // Substitua "posts" pelo caminho da sua página "post-list"
+    }
+    
     @GetMapping("/posts/new")
     public String showPostForm(Model model) {
         model.addAttribute("newPost", new Post());
