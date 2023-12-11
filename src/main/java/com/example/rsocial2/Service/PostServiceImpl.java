@@ -19,8 +19,22 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
+    public List<Post> findRecentPosts() {
+
+        return postRepository.findAllByOrderByCreationDateDesc();
+    }
+
+    @Override
+    public List<Post> findPostsByAuthorId(Long authorId) {
+        return postRepository.findAllByAuthorIdOrderByCreationDateDesc(authorId);
+    }
+
+    @Override
     public Post save(Post post) {
         return postRepository.save(post);
     }
 
+
+
 }
+

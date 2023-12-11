@@ -32,7 +32,7 @@ public class UserService {
             updatedUser.setId(id);
             return userRepository.save(updatedUser);
         }
-        return null; // Usuário não encontrado para atualização
+        return null;
     }
 
     public User deleteUser(Integer id) {
@@ -41,7 +41,7 @@ public class UserService {
             userRepository.deleteById(Long.valueOf(id));
             return userOptional.get();
         }
-        return null; // Usuário não encontrado para exclusão
+        return null;
     }
 }
 
