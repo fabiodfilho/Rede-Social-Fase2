@@ -27,7 +27,7 @@ public class PostController {
     @GetMapping("/")
     public String redirectToPostList() {
 
-        return "redirect:/posts";
+        return "redirect:/allposts";
     }
 
     @GetMapping("/users/{userId}/posts")
@@ -48,6 +48,7 @@ public class PostController {
     @GetMapping("/posts/recent")
     public String listRecentPosts(Model model) {
         List<Post> recentPosts = postService.findRecentPosts();
+        model.addAttribute("posts", recentPosts);
         return "post-list";
     }
 
@@ -57,11 +58,11 @@ public class PostController {
         return "post-form";
     }
 
-    @GetMapping("/posts")
+    @GetMapping("/allposts")
     public String listAllPosts(Model model) {
         List<Post> posts = postService.findAllPosts();
         model.addAttribute("posts", posts);
-        return "post-list";
+        return "list";
     }
 
 
@@ -70,7 +71,7 @@ public class PostController {
 
         if (newPost.getAuthor() != null) {
             postService.save(newPost);
-            return "redirect:/posts";
+            return "redirect:/allposts";
         } else {
 
 

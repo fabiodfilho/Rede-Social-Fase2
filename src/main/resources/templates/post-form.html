@@ -22,7 +22,10 @@
             <textarea class="form-control" id="text" name="text" th:field="*{text}" required></textarea>
         </div>
 
-
+        <div class="mb-3">
+            <label for="image" class="form-label">URL da Imagem:</label>
+            <input type="text" class="form-control" id="image" name="image" th:field="*{image}">
+        </div>
 
         <button type="submit" class="btn btn-primary">Publicar</button>
     </form>

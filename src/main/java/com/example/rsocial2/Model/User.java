@@ -9,6 +9,7 @@ public class User {
     private Integer id;
     private String name;
     private String password;
+    private String perfilPhoto;
 
     public Integer getId() {
         return id;
@@ -42,5 +43,4 @@ public class User {
         this.perfilPhoto = perfilPhoto;
     }
 
-    private String perfilPhoto;
 }

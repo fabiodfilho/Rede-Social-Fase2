@@ -16,7 +16,12 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
+    @GetMapping("/users/image")
+    public String getUsers(Model model) {
+        List<User> users = userService.findAllUsers();
+        model.addAttribute("users", users);
+        return "list";
+    }
     @GetMapping("/users")
     public String getAllUsers(Model model) {
         List<User> users = userService.findAllUsers();
