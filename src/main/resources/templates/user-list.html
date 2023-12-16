@@ -10,26 +10,39 @@
           crossorigin="anonymous">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/images/quadrangular.png" alt="Logo" height="30" class="d-inline-block align-top">
+        </a>
+        <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="/allposts">Feed</a>
+            <a class="nav-link" href="/users">Users</a>
+        </div>
+        <h1 class="navbar-text mx-auto">Lista de Usuários</h1>
+    </div>
+</nav>
 <div class="container mt-5">
-    <h1 class="mb-4">Lista de Usuários</h1>
-
     <table class="table">
         <thead>
         <tr>
             <th>ID</th>
+            <th>Foto de Perfil</th>
             <th>Nome</th>
-
         </tr>
         </thead>
         <tbody>
         <tr th:each="user : ${users}">
             <td th:text="${user.id}"></td>
+            <td>
+                <img th:if="${user.perfilPhoto != null}" th:src="${user.perfilPhoto}" alt="Foto de Perfil" class="user-image" style="width: 50px; height: 50px; border-radius: 50%;">
+            </td>
             <td th:text="${user.name}"></td>
-
             <td><a th:href="@{'/users/' + ${user.id}}">Ver Posts</a></td>
         </tr>
         </tbody>
     </table>
+    <a href="/users/new" class="btn btn-primary">Criar novo usuário</a>
 </div>
 </body>
 </html>

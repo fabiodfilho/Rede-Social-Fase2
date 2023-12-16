@@ -52,7 +52,18 @@
     </style>
 </head>
 <body>
-<h1>Formulário de Usuário</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/images/quadrangular.png" alt="Logo" height="30" class="d-inline-block align-top">
+        </a>
+        <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="/allposts">Feed</a>
+            <a class="nav-link" href="/users">Users</a>
+        </div>
+        <h1 class="navbar-text mx-auto">Formulário de Usuário</h1>
+    </div>
+    </nav>
 
 <form th:action="@{/users/new}" method="post" th:object="${user}">
     <div class="mb-3">

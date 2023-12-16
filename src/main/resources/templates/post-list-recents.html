@@ -53,8 +53,19 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/images/quadrangular.png" alt="Logo" height="30" class="d-inline-block align-top">
+            </a>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="/allposts">Feed</a>
+                <a class="nav-link" href="/users">Users</a>
+            </div>
+            <h1 class="navbar-text mx-auto">Lista de Posts mais recentes</h1>
+        </div>
+    </nav>
 <div class="container mt-5">
-    <h1 class="mb-4">Lista de Posts</h1>
     <div th:each="post : ${posts}" class="post-container">
         <div class="post">
             <div class="user-info">

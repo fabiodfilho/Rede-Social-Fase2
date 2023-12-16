@@ -1,0 +1,15 @@
+2023-12-15 23:30:28.977227-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "PERFIL_PHOTO CHARACTER VARYING(255)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQRERMTEREYGBcXGBQX... (8303)"; SQL statement:
+insert into app_user (name,password,perfil_photo,id) values (?,?,?,?) [22001-224]
+2023-12-15 23:30:49.130678-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "PERFIL_PHOTO CHARACTER VARYING(255)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQRERMTEREYGBcXGBQX... (8303)"; SQL statement:
+insert into app_user (name,password,perfil_photo,id) values (?,?,?,?) [22001-224]
+2023-12-15 23:30:54.720248-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "PERFIL_PHOTO CHARACTER VARYING(255)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQRERMTEREYGBcXGBQX... (8303)"; SQL statement:
+insert into app_user (name,password,perfil_photo,id) values (?,?,?,?) [22001-224]
+2023-12-15 23:31:33.643993-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "PERFIL_PHOTO CHARACTER VARYING(255)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQRERMTEREYGBcXGBQX... (8303)"; SQL statement:
+insert into app_user (name,password,perfil_photo,id) values (?,?,?,?) [22001-224]
+2023-12-15 23:32:21.212325-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "PERFIL_PHOTO CHARACTER VARYING(255)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQRERMTEREYGBcXGBQX... (8303)"; SQL statement:
+insert into app_user (name,password,perfil_photo,id) values (?,?,?,?) [22001-224]

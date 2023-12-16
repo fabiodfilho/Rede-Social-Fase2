@@ -49,7 +49,7 @@ public class PostController {
     public String listRecentPosts(Model model) {
         List<Post> recentPosts = postService.findRecentPosts();
         model.addAttribute("posts", recentPosts);
-        return "post-list";
+        return "post-list-recents";
     }
 
     @GetMapping("/posts/new")
