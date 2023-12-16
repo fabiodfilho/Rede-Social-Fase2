@@ -1,3 +1,0 @@
-2023-12-12 20:07:20.107615-03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLDataException: Value too long for column "IMAGE CHARACTER VARYING(255)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIh... (47883)"; SQL statement:
-insert into post (author_id,creation_date,image,like_count,text,user_name,id) values (?,?,?,?,?,?,?) [22001-224]
